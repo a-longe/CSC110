@@ -22,5 +22,6 @@ print(1,total)
 total = 10
 print(2, total)
 
-total = total + 11
+#total = total + 11 or
+total += 11
 print(3, total)
