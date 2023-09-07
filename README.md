@@ -1,15 +1,1 @@
-# Journal and TODO
-
-## September 6th 2023
-
-### Journal
-
-- Value types
-- Programming environment
-- Initial set up
-
-### TODO
-
-- Log into Prairie Learns
-- Complete frist quiz by friday
-
+@@include [6-9-23.md](assignments_notes/6-9-23/6-9-23.md)
