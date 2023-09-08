@@ -11,13 +11,13 @@
 
 - [] Work through pre lecture quiz 
 - [] Work through post lecture questions
-- [] Find how to call functions in a file from python terminal## September 6th 2023
+- [] Find how to call functions in a file from python terminal## September 06th 2023
 
 ### Journal
 
-- [x] Value types
-- [x] Programming environment
-- [x] Initial set up
+- Value types
+- Programming environment
+- Initial set up
 
 ### TODO
 
