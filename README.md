@@ -9,6 +9,7 @@
 
 ### TODO
 
+- [x] Finish lecture questions (2-3)
 - [x] Work through pre lecture quiz 
 - [x] Work through post lecture questions
 - [x] Find how to call functions in a file from python terminal
