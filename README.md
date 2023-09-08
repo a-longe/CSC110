@@ -1,14 +1,4 @@
 # Alex Longe - CSC110 | Journal and TODO
-## September 7th 2023
-
-### Journal
-
-- [x] TESTING
-
-### TODO
-
-- [x] TESTING
-
 ## September 6th 2023
 
 ### Journal
@@ -20,5 +10,5 @@
 ### TODO
 
 - [x] Log into Prairie Learns
-- [x] Complete frist and second quiz by Fcat riday
+- [x] Complete frist and second quiz by Friday
 
