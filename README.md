@@ -9,9 +9,11 @@
 
 ### TODO
 
-- [] Work through pre lecture quiz 
-- [] Work through post lecture questions
-- [] Find how to call functions in a file from python terminal## September 06th 2023
+- [x] Work through pre lecture quiz 
+- [x] Work through post lecture questions
+- [x] Find how to call functions in a file from python terminal
+
+## September 06th 2023
 
 ### Journal
 
@@ -23,4 +25,6 @@
 
 - [x] Log into Prairie Learns
 - [x] Complete frist and second quiz by Friday
+
+
 
