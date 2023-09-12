@@ -3,11 +3,14 @@
 
 ### Journal
 
-- 
+- How to use print(f"")
+- How to make dynamic functions using parameters or arguments
+- Lab 1 Complete
+
 
 ### TODO
 
-- []
+- [] Post Lecture Questions
 
 ## September 08th 2023
 
