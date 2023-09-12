@@ -1,18 +1,13 @@
 # Alex Longe - CSC110 | Journal and TODO
-## September 06th 2023
+## September 12th 2023
 
 ### Journal
 
-- Value types
-- Programming environment
-- Initial set up
+- 
 
 ### TODO
 
-- [x] Log into Prairie Learns
-- [x] Complete frist and second quiz by Friday
-
-
+- []
 
 ## September 08th 2023
 
@@ -29,13 +24,18 @@
 - [x] Work through post lecture questions
 - [x] Find how to call functions in a file from python terminal
 
-## September 12th 2023
+## September 06th 2023
 
 ### Journal
 
-- 
+- Value types
+- Programming environment
+- Initial set up
 
 ### TODO
 
-- []
+- [x] Log into Prairie Learns
+- [x] Complete frist and second quiz by Friday
+
+
 
