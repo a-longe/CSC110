@@ -14,6 +14,16 @@
 - [x] Work through post lecture questions
 - [x] Find how to call functions in a file from python terminal
 
+## September 12th 2023
+
+### Journal
+
+- 
+
+### TODO
+
+- []
+
 ## September 06th 2023
 
 ### Journal
