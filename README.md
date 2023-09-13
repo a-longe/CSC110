@@ -23,7 +23,7 @@
 
 ### TODO
 
-- [ ] Post Lecture Questions
+- [x] Post Lecture Questions
 
 ## September 08th 2023
 
