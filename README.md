@@ -1,4 +1,17 @@
 # Alex Longe - CSC110 | Journal and TODO
+## September 13th 2023
+
+### Journal
+
+- global vs local variables
+- more function practice
+- how to import and use libraries
+
+### TODO
+
+- [x] Post lecture questions
+- [x] Practice: Function Arguments
+
 ## September 12th 2023
 
 ### Journal

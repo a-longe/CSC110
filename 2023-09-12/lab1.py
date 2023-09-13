@@ -19,6 +19,11 @@ def print_my_info():
     print(f"Here is some math: {fav_num}/{age} is {result}")
 
 def print_sum():
+    """
+    Takes the sum of 23.2 and 82.4 and print it.
+    >>> print_sum()
+    ==> 0.8235294117647058
+    """
     num1 = 23.2
     num2 = 82.4
     print(num1 + num2)
