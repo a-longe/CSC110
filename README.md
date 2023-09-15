@@ -3,11 +3,15 @@
 
 ### Journal
 
-- 
+- Created functions with conditionals 
+- Used doctest to test cases
+- Int to roman function (first interesting problem)
 
 ### TODO
 
-- [ ]
+- [x] Assignment #1
+- [x] Post Lecture Test 4
+
 
 ## September 13th 2023
 
