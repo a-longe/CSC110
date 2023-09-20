@@ -107,6 +107,7 @@ ROMAN_VALUE_I = 1
 
 def print_roman_from_int(num:int):
     """
+    Precondition: 1 <= num <= 10
     Takes an integer (1-10) and prints the roman number equivilant
     >>> print_roman_from_int(9)
     IX

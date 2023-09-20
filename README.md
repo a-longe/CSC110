@@ -1,4 +1,32 @@
 # Alex Longe - CSC110 | Journal and TODO
+## September 20th 2023
+
+### Journal
+
+- More work on conditionals
+- interesting question in 07, about forming teams. Got some use out of map() and lambda
+- Had to miss class because of HS commitments but was able to figure questions out
+
+### TODO
+
+- [ ] TST5
+- [ ] TST6
+- [ ] PB3
+- [ ] Assignment 2 (complete before camping)
+
+## September 19th 2023
+
+### Journal
+
+- Review of bus fare problem
+- explaining redundant expressions
+- nested rational expressions 
+- Completed Lab 2
+
+### TODO
+
+- [x] Finish Lecture Notes 06
+
 ## September 15th 2023
 
 ### Journal
