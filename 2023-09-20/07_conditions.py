@@ -181,8 +181,8 @@ def print_num_teams(num_ppl:int, max_size:int):
     >>> print_num_teams(21, 9)
     teams: 3
     """
-    add_one = lambda x : x+1
-    possible_num_teams = list(map(add_one, (sorted(range(max_size), reverse=True))))
+    possible_num_teams = list(range(max_size, 0, -1))
+    print(possible_num_teams)
     for team_size in possible_num_teams:
         if num_ppl % team_size == 0:
             num_teams = num_ppl // team_size
