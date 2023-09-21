@@ -1,4 +1,10 @@
 # Alex Longe - CSC110 | Journal and TODO
+## September 21th 2023
+
+### Journal
+
+- Completed Assignment 2
+
 ## September 20th 2023
 
 ### Journal
