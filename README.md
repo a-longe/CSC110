@@ -1,4 +1,15 @@
 # Alex Longe - CSC110 | Journal and TODO
+## September 22th 2023
+
+### Journal
+
+- Lecture File 08
+- Learning about return expression and using functions inside of other functions
+
+### TODO
+
+- [ ]
+
 ## September 21th 2023
 
 ### Journal
@@ -15,10 +26,10 @@
 
 ### TODO
 
-- [ ] TST5
-- [ ] TST6
-- [ ] PB3
-- [ ] Assignment 2 (complete before camping)
+- [x] TST5
+- [x] TST6
+- [x] PB3
+- [x] Assignment 2 (complete before camping)
 
 ## September 19th 2023
 
