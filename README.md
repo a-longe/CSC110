@@ -1,4 +1,22 @@
 # Alex Longe - CSC110 | Journal and TODO
+## September 26th 2023
+
+### Journal
+
+- Lecture file 09 Complete
+- Lots of practice string slicing 
+- note: `[x:y]` x is inclusive and y is exclusive
+- Started work on Assignment3
+
+
+## September 25th 2023
+
+### Journal
+
+- Completed Lab 3
+- Learned About comparing strings using ><! and = 
+- note: They compare the position of these sting in a relative dictionary, uppercase appears before lowercase
+
 ## September 22th 2023
 
 ### Journal

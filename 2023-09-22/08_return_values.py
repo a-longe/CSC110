@@ -70,6 +70,9 @@ NOTICE: print_fare does not return a value, so calling it will not be useful
 BUT, there are CONSTANTS defined that might be useful!
 '''
 
+MIN_GROUP_SIZE = 10
+GROUP_DISCOUNT = 0.90
+
 def total_fare(children:int, adults:int, seniors:int) -> float:
     """
     Takes The number of each group of people taking a bus and returns the total
@@ -79,6 +82,9 @@ def total_fare(children:int, adults:int, seniors:int) -> float:
     total_fare += children * CHILD_RATE
     total_fare += adults * ADULT_RATE
     total_fare += seniors * SENIOR_RATE
+    if adults + children + seniors >= MIN_GROUP_SIZE:
+        total_fare *= GROUP_DISCOUNT
+
     return total_fare
 
 
