@@ -32,9 +32,6 @@
 - Lecture File 08
 - Learning about return expression and using functions inside of other functions
 
-### TODO
-
-- [ ]
 
 ## September 21th 2023
 
