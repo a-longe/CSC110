@@ -1,4 +1,14 @@
 # Alex Longe - CSC110 | Journal and TODO
+## September 29th 2023
+
+### Journal
+
+- Lecture Notes 11 
+
+### TODO
+
+- [ ] Read Prairie Learn Anouncement
+
 ## September 27th 2023
 
 ### Journal
