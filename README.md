@@ -7,7 +7,8 @@
 
 ### TODO
 
-- [ ] Read Prairie Learn Anouncement
+- [x] Read Prairie Learn Anouncement
+- [ ] Get ONECard
 
 ## September 27th 2023
 
