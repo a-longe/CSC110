@@ -8,7 +8,7 @@
 
 ### TODO
 
-- [ ] Assignment 4
+- [x] Assignment 4
 
 ## September 29th 2023
 
