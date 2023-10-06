@@ -3,11 +3,12 @@
 
 ### Journal
 
-- 
+- Lecture notes 12
+- Lab 4
 
 ### TODO
 
-- [ ]
+- [ ] Assignment 4
 
 ## September 29th 2023
 
