@@ -1,4 +1,25 @@
 # Alex Longe - CSC110 | Journal and TODO
+## October 10th 2023
+
+### Journal
+
+- work on lecture assignment 14
+- work on seive_of_eratosthenes
+- completed lab 5
+
+### TODO
+
+- [ ] finish lecture assignment 14
+- [ ] finish seive_of_eratosthenes?
+
+
+## October 06th 2023
+
+### Journal
+
+- Lecture file 13
+
+
 ## October 03th 2023
 
 ### Journal
