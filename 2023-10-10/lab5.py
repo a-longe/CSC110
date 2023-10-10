@@ -1,7 +1,5 @@
 CHILD_MAX_AGE = 17
-ADULT_MIN_AGE = 18
 ADULT_MAX_AGE = 64
-SENIOR_MIN_AGE = 65
 MAX_ITTERATIONS = 100
 
 def get_age_catagory(age:int) -> str:
@@ -25,7 +23,7 @@ def print_name_age_v1() -> None:
     name:str = input("Please enter your name: ")
     age:int = int(input("Please enter a positive whole number as your age: "))
     age_catagory:str = get_age_catagory(age)
-    
+
     print(f"hello {name} {age_catagory}")
 
 
@@ -36,13 +34,10 @@ def print_name_age_v2() -> None:
     name:str = input("Please enter your name: ")
     age = input("Please enter a positive whole number as your age: ")
     if age.isdigit() and int(age) >= 0:
-        pass
+        age_catagory:str = get_age_catagory(int(age))
+        print(f"hello {name} {age_catagory}")
     else:
         print(f"{name} you are lying about your age")
-        return None
-
-    age_catagory:str = get_age_catagory(int(age))
-    print(f"hello {name} {age_catagory}")
 
 
 def get_num(min_val:int, prompt:str) -> int:
@@ -51,21 +46,19 @@ def get_num(min_val:int, prompt:str) -> int:
     for a inpit that is a valid integer and is greater than or equal to that
     given minimum
     """
-    for i in range(MAX_ITTERATIONS):
+    age = input(prompt)
+    while not (age.isdigit() and int(age) >= min_val):
         age = input(prompt)
-        if age.isdigit() and int(age) >= min_val:
-            return int(age)
-    return None
+    return int(age)
 
 
 def print_name_age_v3() -> None:
     """
-    Prompts user for name, then continuously asks user for valid integer 
-    as age then prints hello, followed by their name and what age catagory 
+    Prompts user for name, then continuously asks user for valid integer
+    as age then prints hello, followed by their name and what age catagory
     they fall into
     """
     name:str = input("Please enter your name: ")
     age:int = get_num(0, "Please enter your age: ")
     age_catagory:str = get_age_catagory(age)
     print(f"hello {name} {age_catagory}")
-
