@@ -68,9 +68,6 @@ def get_n_primes(num_primes:int) -> str:
         num_testing+=1
     return prime_str
 
-
-
-
 '''
 Q4. Design a function that will take a number representing the size
 and prints a pattern of slashes as demonstrated in the examples below
@@ -89,6 +86,8 @@ if size is 4, prints:
 //\\
 /\\\
 '''
+
+def print_slashes(rows:int) -> None:
 
 
 '''
