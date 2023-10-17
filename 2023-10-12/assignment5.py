@@ -3,6 +3,8 @@ from math import log
 from sys import set_int_max_str_digits
 import random
 
+global roll_count ; roll_count = 0
+
 MIN_ROLL = 1
 MAX_ROLL = 6
 MIN_BET = 5
@@ -18,13 +20,12 @@ def roll_one_die() -> int:
     """
     # generates a random number between MIN_ROLL and MAX_ROLL inclusive
     # this line MUST be uncommented when submitting to PrairieLearn
+    
     die = random.randint(MIN_ROLL, MAX_ROLL)
-
     # for testing to allow you to enter the dice roll you want at the keyboard
     # comment out the line above and uncomment this line:
     # this line MUST be commented out when submitting to PrairieLearn
     # die = int(input('enter a simulated dice roll\n'))
-
     return die
 
 
@@ -35,6 +36,7 @@ def list_to_string(values:list[int]) -> str:
         if index != len(values) - 1:
             string += ','
     return string
+
 
 def get_sequence(min_val:int, increment:int, max_val:int) -> str:
     """
@@ -114,70 +116,7 @@ def is_perfect(num:int) -> bool:
     return sum_factors(num) == num
 
 
-""" BELOW IS CODE I HAVE PREVIOUSLY WRITTEN FOR ANOTHER PROJECT"""
-
-# Theorem: pn = n (log n + log log n - 1 + (log log (n) - 2)/log n - ((log log (n))2 - 6 log log (n) + 11)/(2 log2 n)).
-def nth_prime(n):
-    log_n = log(n)
-    log_log_n = log(log_n)
-    return round(n * (log_n + log(log(n-1)) + (log_log_n - 2) / log_n - ((log_log_n) * 2 - 6 * log_log_n + 11) / (2 * log(n, 2))))
-
-
-def get_multiples(num:int, to:int) -> list:
-    num_multiples = to // num
-    multiples = []
-    for i in range(2, num_multiples + 1):
-        multiples.append(num * i)
-    return multiples
-
-
-def find_n_primes(num_primes) -> list:
-    if num_primes < 1000:
-        n = 1000
-    else: n = num_primes
-    array_len = nth_prime(n)
-    return seive_of_eratosthenes(array_len, False)[:num_primes]
-
-
-def seive_of_eratosthenes(to_num:int, do_debug:bool) -> list:
-    # first insstaciate array with len n with increasing numbers from 1
-    is_prime:list = [True for i in range(to_num)]
-
-    # create a list of possible factors for all numbers up to to_num
-    largest_possible_factor = int(0.5 * to_num)+1
-    possible_factors = [factor for factor in range(2, largest_possible_factor)]
-    if do_debug: print("All Possible Factors:", possible_factors)
-
-    # loop through each possible_factor and for each possible_factor loop through
-    # each multiple of that number to set respective index to false in is_prime
-    # list
-    for possible_factor in possible_factors:
-        # if possible_factor is already determined to not be prime,
-        # Do not need to check all of it's multiples because they must have
-        # already been determined to not be prime
-        if not is_prime[possible_factor - 1]:
-            # skip this itteration of possible factors, move onto next
-            if do_debug: print("skipped", possible_factor)
-
-
-        multiples = get_multiples(possible_factor, to_num)
-        for multiple in multiples:
-            multiple_index = multiple - 1
-            if do_debug: print(possible_factor, multiple, "is not prime")
-            is_prime[multiple_index] = False
-
-    primes:list = []
-    # now we have a list of booleans that repersent which numbers are is_prime
-    # convert this to a list of numbers
-    for index, bool in enumerate(is_prime):
-        if bool:
-            primes.append(index + 1)
-
-    return primes[1:]
-
-"""ABOVE IS PREVIOUSLY WRITEN CODE FOR ANOTHER PROJECT"""    
-
-def old_n_perfect_numbers(num_perfects:int) -> str:
+def n_perfect_numbers(num_perfects:int) -> str:
     perfects = []
     testing = 1
     while len(perfects) < num_perfects:
@@ -186,19 +125,89 @@ def old_n_perfect_numbers(num_perfects:int) -> str:
         testing += 1
     return list_to_string(perfects)
 
-def n_perfect_numbers(num_perfect_numbers:int) -> list[int]:
-    """
-    Precondition: num_perfect_numbers <= 914
-    finds the first n perfect numbers and returns them as a list
-    Done by finding the first n prime numbers and applying the formula
-    2^(p-1)(2^p - 1) to each prime to find the perfect numbers
-    """
-    # Find n primes
-    primes = find_n_primes(num_perfect_numbers)
-    perfect = lambda prime : (2 ** (prime - 1)) * ((2 ** prime) - 1)
-    perfects = list(map(perfect, primes))
-    return list_to_string(perfects)
-    # largest value returned was 100_000 digits long
+    
+# PART 2 ------
 
+PERFECT_ROLL_SCORE = 21
+TRIO_ROLL_SCORE = 5
+
+def calculate_score(dice:list[int], target:int) -> int:
+    """
+    Takes a list of the three dice rolls in your turn and returns the
+    apporopriate score
+    >>> calculate_score([5, 5, 5], 5)
+    21
+    >>> calculate_score([5, 5, 5], 6)
+    5
+    >>> calculate_score([4, 4, 4], 6)
+    5
+    >>> calculate_score([4, 4, 6], 6)
+    1
+    >>> calculate_score([4, 6, 6], 6)
+    2
+    """
+    score = 0
+    if dice[0] == target and dice[1] == target and dice[2] == target:
+        score = PERFECT_ROLL_SCORE
+    elif dice[0] == dice[1] and dice[1] == dice[2]:
+        score = TRIO_ROLL_SCORE
+    else:
+        for roll in dice:
+            if roll == target:
+                score += 1
+    if score == 1:
+        print(f"scored: {score} point")
+    else:
+        print(f"scored: {score} points")
+    return score
+
+
+def roll_dice() -> list[int]:
+    dice = [roll_one_die(), roll_one_die(), roll_one_die()]
+    print(f"Three dice rolled: {dice[0]}, {dice[1]}, {dice[2]}")
+    return dice
     
+
+   
+
+def take_turn(player:str, player_score:int, round:int) -> int:
+    print(f"Player {player} is taking a turn in round {round}")
+    roll = roll_dice()
+    score = calculate_score(roll, round)
+    player_score += score
+    print(f"Total points: {player_score}\n")
     
+    while not (score == 0 or player_score >= 21):
+        roll = roll_dice()
+        score = calculate_score(roll, round)
+        player_score += score
+        print(f"Total points: {player_score}\n")
+        
+    return player_score
+
+
+def play_round(first_player:str, second_player:str, round:int) -> str:
+    second_player_score = 0
+    first_player_score = take_turn(first_player, 0, round)
+    turn = 'second'
+    while first_player_score < 21 and second_player_score < 21:
+        if turn == 'first':
+            first_player_score = take_turn(first_player, first_player_score, round)
+            turn = 'second'
+        elif turn == 'second':
+            second_player_score = take_turn(second_player, second_player_score, round)
+            turn = 'first'
+    
+    # determine winner
+    if first_player_score >= second_player_score:
+        # first wins
+        winning_name = first_player
+
+    else:
+        # second wins
+        winning_name = second_player
+
+    # print win statement
+    print(f"the winner of this round is: {winning_name}")
+    print(f"{first_player} has {first_player_score} points and {second_player} has {second_player_score} points")
+    return winning_name

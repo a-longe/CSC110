@@ -1,13 +1,33 @@
 # Alex Longe - CSC110 | Journal and TODO
+## October 17th 2023
+
+### Journal
+
+- Completed Lecture notes 17
+
+## October 15th 2023
+
+### Journal
+
+- Completed Lab 6
+
+## October 13th 2023
+
+### Journal
+
+- Completed Lecture notes 16
+  - made very easy with list comprehension and lambda functions
+
+
 ## October 12th 2023
 
 ### Journal
 
-- 
+- work on assignment 5
 
 ### TODO
 
-- [ ]
+- [x] complete assignmnet 5
 
 ## October 11th 2023
 
