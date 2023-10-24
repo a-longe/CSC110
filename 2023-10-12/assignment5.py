@@ -116,7 +116,7 @@ def is_perfect(num:int) -> bool:
     return sum_factors(num) == num
 
 
-def n_perfect_numbers(num_perfects:int) -> str:
+def n_numbers(num_perfects:int) -> str:
     perfects = []
     testing = 1
     while len(perfects) < num_perfects:
