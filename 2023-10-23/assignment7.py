@@ -168,8 +168,20 @@ def is_actor_in_show(show:Show, actor_to_find:str) -> bool:
     (2019, 9, 1)), \
     'MichaEL cerA')
     True
+
+    >>> is_actor_in_show(('TV Show', 'The Matrix Revolutions',\
+    ['Shandiin Lee', 'Chidiebere Koenig', 'Mayamiko Stroman', 'Wambli Koenig',\
+    'Neo Alserda', 'Neo Kennedy', 'Dada Lee', 'Mayamiko Nielsen'],\
+    ['JOSE STROMAN', 'BOB MARTINEK', 'BOB BERARDI', 'CHARIS GARFIELD',\
+    'NUR MARTINEK', 'SHANDIIN KENNEDY', 'JIE MARTINEK'],\
+    (2013, 6, 17)),\
+    'charis garfield')
+    True
     """
-    return actor_to_find.title() in show[ACTORS]
+    for actor in show[ACTORS]:
+        if actor_to_find.lower() == actor.lower():
+            return True
+    return False
     
 
 def is_before(date1:Date, date2:Date) -> bool:
@@ -198,7 +210,7 @@ def is_before(date1:Date, date2:Date) -> bool:
                 return False
             else:
                 # dates are the same
-                return True
+                return False
         
 
 
@@ -292,7 +304,8 @@ def get_shows_with_actor(shows:list[Show], actor_to_find:str) -> list[Show]:
     []
     """
     shows_with_actor = []
+    actors = []
     for show in shows:
-        if actor_to_find.title() in show[ACTORS]:
+        if is_actor_in_show(show, actor_to_find):
             shows_with_actor.append(show)
     return shows_with_actor

@@ -13,7 +13,8 @@ def file_to_person_list(file_name:str) -> list[Person]:
     with each person being seperated onto seperate lines
     with their name and age being seperated by spaces
     >>> file_to_person_list(DATA_FILE_PATH)
-    [('Lynden', 6), ('Tian', 27), ('Daljit', 18), ('Jose', 53), ('Jingwen', 17), ('Rajan', 65)]
+    [('Lynden', 6), ('Tian', 27), ('Daljit', 18), \
+    ('Jose', 53), ('Jingwen', 17), ('Rajan', 65)]
     """
     people = []
     with open(file_name, 'r') as file_handler:

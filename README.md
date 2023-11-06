@@ -1,4 +1,60 @@
 # Alex Longe - CSC110 | Journal and TODO
+## November 03th 2023
+
+### Journal
+
+- 
+
+### TODO
+
+- [ ]
+
+## November 02th 2023
+
+### Journal
+
+- 
+
+### TODO
+
+- [ ]
+
+## October 31th 2023
+
+### Journal
+
+- 
+
+### TODO
+
+- [ ]
+
+## October 30th 2023
+
+### Journal
+
+- Lab 8
+
+## October 27th 2023
+
+### Journal
+
+- Worked on File IO (Leture Notes 21)
+
+### TODO
+
+- [ ] Do extra tests
+
+## October 25th 2023
+
+### Journal
+
+- Lecture notes 20
+
+### TODO
+
+- [ ] Pre Lecture quiz 15
+
 ## October 24th 2023
 
 ### Journal
@@ -8,7 +64,7 @@
 
 ### TODO
 
-- [ ]
+- [x] Complete assignment 7
 
 ## October 23th 2023
 

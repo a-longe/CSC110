@@ -1,0 +1,7 @@
+V989 yes
+V592 no
+V912 yes
+V923 yes
+V912 abstain
+V181 no
+V931 yes
