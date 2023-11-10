@@ -486,11 +486,10 @@ def query(show_data: list[NetflixShow]) -> list[str]:
     for show in shows_with_popular_actors:
         unsorted_titles.append(show[TITLE])
     
+    # sort
     sorted_titles = []
     try: sorted_titles.append(unsorted_titles[0])
     except IndexError: return []
-
-    # sort
     for show_title in unsorted_titles[1:]:
         has_inserted = False
         for index, sorted_title in enumerate(sorted_titles):

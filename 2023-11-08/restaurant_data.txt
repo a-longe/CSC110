@@ -1,0 +1,11 @@
+Clarke&Co,4.5,$$$,Canadian
+Red Fish Blue Fish,4.5,$$,Fish and Chips,Seafood
+Blue Fox Cafe,4.5,$$$,Breakfast and Brunch,Canadian
+Jam Cafe,4.5,$$,Breakfast and Brunch
+Il Terrazzo Ristorante,4.5,$$$,Italian
+Il Covo Trattoria,4,$$,Italian
+Nautical Nellies,4,$$,Seafood,Steakhouses
+Cora's,4,$$,Breakfast and Brunch
+The Pacific Restaurant,4,$$$,Canadian
+Kuma Noodles Japan,4,$,Ramen
+The Tartan Toque,3.5,$$,Canadian

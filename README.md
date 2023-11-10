@@ -1,4 +1,44 @@
 # Alex Longe - CSC110 | Journal and TODO
+## November 10th 2023
+
+### Journal
+
+- 
+
+### TODO
+
+- [ ]
+
+## November 08th 2023
+
+### Journal
+
+- 
+
+### TODO
+
+- [ ]
+
+## November 07th 2023
+
+### Journal
+
+- 
+
+### TODO
+
+- [ ]
+
+## November 06th 2023
+
+### Journal
+
+- 
+
+### TODO
+
+- [ ]
+
 ## November 03th 2023
 
 ### Journal
