@@ -35,7 +35,7 @@ import math
 a = 3
 b = 4
 # c = (a**2 + b**2)**0.5  # 0.5 is equivialnt to square root
-c = math.sqrt(a**2 + b**2)
+c = (a**2 + b**2) ** 0.5
 print("hypotenuse length:", c)
 
 '''
