@@ -87,7 +87,7 @@ Q2c. What happens if we remove the following line from bar: x = 5.5
 
 def foo():
     x = 4.5
-    # test_variable = 1
+    test_variable = 1
     bar()
     print('in foo:', x, test_variable)
 
