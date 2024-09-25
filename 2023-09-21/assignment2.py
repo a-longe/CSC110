@@ -3,7 +3,7 @@ import doctest
 def check_funds(balance: float, purchase: float):
     """
     Takes your bank balence and a purchace ammount and prints
-    how much money you will have left, if you are short money, 
+    how much money you will have left, if you are short money,
     prints how much you are hort and if you are in debt, it will
     tell you that you have a negative bank balance
     >>> check_funds(100, 10)
@@ -51,7 +51,7 @@ def print_biggest(num1:float ,num2:float ,num3:float):
 
     if num1 > num2 and num1 > num3:
         print(num1)
-    elif num2 > num3: 
+    elif num2 > num3:
         # not nessisary to check if num1 > num2 because even if that is true,
         # it means that num3 is greater than num1 and num2 and the conditionals will work
         print(num2)
@@ -100,7 +100,7 @@ def is_multiple_of(num1:int, num2:int):
     """
     # if the remainder of one number divided by another number is 0,
     # the first number is a multiple of the second
-    if num1 == 0 or num2 == 0 or num1 % num2 == 0: 
+    if num1 == 0 or num2 == 0 or num1 % num2 == 0:
         print(f"{num1} is a multiple of {num2}")
     else:
         print(f"{num1} is not a multiple of {num2}")
@@ -163,7 +163,7 @@ def display_charges(purchase_price: float, tax_percentage: float, is_member:bool
     else:
         shipping = purchase_price * SHIPPING_RATE
 
-    
+
     total_charge = discounted_price + tax + shipping
 
     # Print Result
@@ -171,5 +171,5 @@ def display_charges(purchase_price: float, tax_percentage: float, is_member:bool
     print(f"tax: $ {tax:.2f}")
     print(f"shipping: $ {shipping:.2f}")
     print(f"total charge: $ {total_charge:.2f}")
-    
-    
+
+
